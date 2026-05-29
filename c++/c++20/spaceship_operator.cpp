@@ -1,10 +1,8 @@
-// C++ program to illustrate the
-// above concepts
 #include <bits/stdc++.h>
 #include <compare>
 using namespace std;
 
-// Driver Code
+
 int main()
 {
     int a = 91, b = 110;
