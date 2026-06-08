@@ -8,4 +8,6 @@ fun recognize(c: Char) = when (c)
     }
 fun main(){
     println(isLetter('x'))
+    println("Kotlin" in "Java".."Scala") //true
+    println("Kotlin" in setOf("Java", "Scala"))//false
 }
