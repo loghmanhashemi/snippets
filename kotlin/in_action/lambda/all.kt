@@ -3,3 +3,4 @@ fun main(){
    var people = listOf(Person("ALice",29),Person("Bob",31))
    println(people.all({p :Person->p.age<27}))
 }
+//false
