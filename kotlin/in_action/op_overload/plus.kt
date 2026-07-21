@@ -3,6 +3,10 @@ data class Point(val x: Int, val y: Int){
         return Point(x+other.x , y + other.y)
     }
 }
+/* altenavite implementation : as an extension function
+operator fun Point.plus(other: Point): Point{ 
+    return Point(x + other.x, y + other.y)
+}*/
 fun main(){
     val p1 = Point(10,20)
     val p2 = Point(15,10)
