@@ -1,3 +1,4 @@
+//key point: The subclasses decide what the factory method creates.
 interface Button {
     fun render()
 }
