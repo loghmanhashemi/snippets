@@ -1,3 +1,13 @@
+/*
+Think about Flyweight when you have a huge number of objects + lots of duplicated data
+Intrinsic vs extrinsic state: first shared, second not
+Flyweight vs Singleton
+singleton: There should be one instance
+Flyweight: There can be many logical objects, but they share common state:
+Object A ──┐
+Object B ──┼──→ Shared Flyweight
+Object C ──┘
+*/
 class TreeType(
     val name: String,
     val texture: String,
