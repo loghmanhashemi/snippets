@@ -1,3 +1,4 @@
+//composite == tree
 interface FileSystemItem {
     fun show()
 }

@@ -1,3 +1,4 @@
+//decorator: kind of wrapper
 interface Coffee {
     fun cost(): Double
     fun description(): String
