@@ -4,10 +4,12 @@ fun main(){
     letters.mapTo(results) {
         it.toUpperCase()
     }
-    println(results)
+    println(results)//[A, B, C, D]
     letters.mapTo(results) {
         it.toLowerCase()
     }
-    println(results)
+    println(results)//[A, B, C, D, a, b, c, d]
 
 }
+
+
