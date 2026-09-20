@@ -9,4 +9,7 @@ val people = listOf(Person("Jane", "Doe", 19),
 fun main(){
     println(people.sortedBy { it.age })
     println(people.sortedBy { it.lastName })
+    println(people.sortedByDescending { it.lastName })
+    //if you want to compare by more than one parameter
+    println(people.sortedWith(compareBy({it.lastName}, {it.age})))
 }
