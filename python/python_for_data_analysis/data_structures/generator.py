@@ -1,3 +1,4 @@
+#generators are lazy
 def squares(n=10):
     print(f"Generating squares from 1 to {n ** 2}")
     for i in range(1, n + 1):
