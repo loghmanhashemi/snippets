@@ -8,4 +8,5 @@ def attempt_float(x):
 print(attempt_float("1.2345"))
 print(attempt_float("something"))
 print(float("1.2345"))
+print(attempt_float((1, 2)))
 print(float("something"))
