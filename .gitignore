@@ -2,6 +2,6 @@
 *.out
 *.o
 *.gcm
-
+*.class
 
 
