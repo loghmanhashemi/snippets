@@ -21,13 +21,21 @@ hits30 = (np.abs(walks) >= 30).any(axis=1) # Checks whether at least one element
 """
 print(hits30)
 print(hits30.sum()) # Number that hit 30 or -30
+crossing_times = (np.abs(walks[hits30]) >= 30).argmax(axis=1)
+print(crossing_times)
 """
-[[  1   0  -1 ... -16 -17 -18]
- [ -1   0  -1 ...  -6  -7  -8]
- [  1   2   1 ... -14 -13 -12]
+[[  1   2   1 ...  18  17  16]
+ [  1   0   1 ... -48 -49 -48]
+ [  1   0  -1 ... -22 -23 -22]
  ...
- [  1   0  -1 ... -14 -13 -12]
- [  1   2   1 ...   2   1   0]
- [ -1   0   1 ... -26 -25 -24]]
+ [ -1  -2  -3 ... -72 -71 -70]
+ [  1   2   1 ...  34  33  34]
+ [  1   2   1 ... -22 -23 -22]]
+120
+-118
+[ True  True False ...  True  True False]
+3450
+[371 447 589 ... 353 383 711]
+
 
 """
