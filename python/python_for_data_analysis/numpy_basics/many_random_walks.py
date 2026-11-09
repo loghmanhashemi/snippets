@@ -22,6 +22,10 @@ hits30 = (np.abs(walks) >= 30).any(axis=1) # Checks whether at least one element
 print(hits30)
 print(hits30.sum()) # Number that hit 30 or -30
 crossing_times = (np.abs(walks[hits30]) >= 30).argmax(axis=1)
+#argmax() returns the index of the maximum element in an array
+#for boolean values there are only 0 and 1 and it returns first 1 if exist
+# I think the following code is correct:
+# crossing_times =  (np.abs(walks[hits30]) >= 30).sum(axis=1)
 print(crossing_times)
 """
 [[  1   2   1 ...  18  17  16]
