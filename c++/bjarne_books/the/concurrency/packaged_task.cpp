@@ -21,7 +21,8 @@ int main() {
     std::future<int> future = task.get_future();
 
     // Execute task in another thread
-    std::thread t(std::move(task), 10, 20);
+    std::thread t(std::move(task), 10, 20); 
+    //The move() operations are needed because a packaged_task cannot be copied.
 
     // Get result
     std::cout << "Result: " << future.get() << std::endl;
