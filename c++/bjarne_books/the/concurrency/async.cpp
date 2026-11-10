@@ -10,7 +10,7 @@ using namespace std;
 double accum(double* beg, double * end, double init)
 // compute the sum of [beg:end) starting with the initial value init
 {
-    return accumulate(beg,end,init);
+    return accumulate(beg,end,init);//standard c++ function
 }
 double comp4(vector<double>& v)
 // spawn many tasks if v is large enough
