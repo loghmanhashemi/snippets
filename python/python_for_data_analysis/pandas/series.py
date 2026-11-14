@@ -4,6 +4,7 @@ obj = pd.Series([4, 7, -5, 3])
 print(obj)
 print('-------------1')
 print(obj.array)
+print('-------------')
 print(obj.index)
 print('-------------2')
 obj2 = pd.Series([4, 7, -5, 3], index=["d", "b", "a", "c"])
@@ -24,6 +25,7 @@ dtype: int64
 <NumpyExtensionArray>
 [4, 7, -5, 3]
 Length: 4, dtype: int64
+-------------
 RangeIndex(start=0, stop=4, step=1)
 -------------2
 d    4
@@ -46,5 +48,6 @@ b    14
 a   -10
 c     6
 dtype: int64
+
   
 """
