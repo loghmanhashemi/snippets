@@ -1,6 +1,8 @@
 #include <iostream>
 #include <type_traits>
 /*
+A type function is a function that is evaluated at compile-time,
+given a type as its argument or returning a type
 There are two separate decisions:
 1. if (get(&f, &i)) is evaluated at runtime.
 2. if constexpr inside process() is evaluated at compile time.
