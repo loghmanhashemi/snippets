@@ -4,4 +4,4 @@ fun main(args: Array<String>) {
     val second = args[1].toInt()
     val third = args[2].toFloat()
     println("$first $second $third")
-}
+}   
