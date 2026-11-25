@@ -10,3 +10,9 @@ fun main() {
     m eq mapOf(5 to "5ive",
     4 to "four", 6 to "six")
 }
+/*
+five
+5ive
+{5=5ive, 6=six, 4=four}
+
+ */
